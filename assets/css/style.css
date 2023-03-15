@@ -102,6 +102,9 @@
 	font-size: 1.5rem;
 	color: var(--black-text);
 }
+.service .card {
+	border-radius: 20px;
+}
 .service .iconBx {
 	width: 90%;
 	padding: 1rem;
