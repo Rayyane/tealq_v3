@@ -1,0 +1,161 @@
+* {
+	font-family: 'Outfit', sans-serif;
+	color: #F8FAFB;
+	--black-text: #1F2225;
+}
+
+.bg-light {
+	background-color: transparent !important;
+}
+
+.banner {
+	height: 100vh;
+	background-color: #101e27;
+}
+
+
+@media (min-width: 1299px) {
+	.banner .banner-content {
+		padding-top: 20%;
+	}
+}
+
+
+.banner .banner-text h1 {
+	font-size: 4rem;
+}
+.banner .banner-text h3 {
+	font-size: 2.1rem;
+}
+.banner .banner-button {
+	padding-top: 20px;
+}
+.banner .my-btn {
+	background-color: transparent;
+	border-color: #008080;
+}
+.banner .my-link {
+	background-color: transparent;
+	border-color: transparent;
+}
+.about{
+	background-color: #F8FAFB;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.about .about-title, .about .about-text {
+	color: var(--black-text);
+	padding-right: 5rem;
+}
+.about .about-title {
+	font-size: 3rem;
+}
+.about .about-text {
+	font-size: 1.1rem;
+}
+
+.why-us{
+	background-color: #F8FAFB;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.why-us .why-us-title, .why-us .why-us-text {
+	color: var(--black-text);
+	padding-left: 5rem;
+}
+.why-us .why-us-title {
+	font-size: 3rem;
+}
+.why-us .why-us-text {
+	font-size: 1.1rem;
+}
+.why-us ul {
+	padding-left: 5rem;
+	padding-top: 1rem;
+}
+.why-us li {
+	color: var(--black-text);
+	font-size: 1.1rem;
+	list-style: none;
+	padding: .3rem;
+}
+.why-us li i {
+	color: #008080;
+	padding-right: 0.5rem;
+}
+
+.service {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.service .custom-bg {
+	background-color: #F8FAFB;
+	padding: 1rem;
+	border: solid 1px transparent;
+	border-radius: 20px;
+}
+.service .service-title {
+	color: var(--black-text);
+	font-size: 3rem;
+}
+.service .service-text {
+	font-size: 1.5rem;
+	color: var(--black-text);
+}
+.service .iconBx {
+	width: 90%;
+	padding: 1rem;
+}
+
+.service .iconBx i {
+	font-size: 5rem;
+	color: #008080;
+	padding-top: 1rem;
+}
+.service .card-body {
+	padding: 0;
+}
+.service .titleBx {
+	width: 90%;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #cdcdcd;
+}
+.service .titleBx .card-title {
+	font-size: 1.5rem;
+	padding-left: 0;
+	color: var(--black-text);
+}
+.service .titleBx .card-text {
+	color: var(--black-text);
+}
+.service .listBx {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.service .listBx ul {
+	padding-right: 0.2rem;
+}
+.service .listBx li {
+	list-style: none;
+	color: var(--black-text);
+}
+.service .listBx .btnBx i {
+	color: var(--black-text);
+	font-weight: lighter;
+	padding-left: 0.3rem;
+	transition: 0.5s;
+}
+.service .listBx .btnBx:hover i {
+	color: #008080;
+	padding-left: 0.5rem;
+}
+.service .listBx li i {
+	color: #008080;
+	padding-right: 0.5rem;
+}
+.service .listBx a{
+	text-decoration: none;
+	color: var(--black-text);
+	font-size: 1.2rem;
+	padding-left: 1.5rem;
+}
