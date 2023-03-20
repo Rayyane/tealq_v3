@@ -14,7 +14,7 @@
 
 	<link href="assets/css/aos.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top p-3">
 	  <div class="container">
 	  	<a class="navbar-brand" href="#">tealQ Digital</a>
@@ -24,11 +24,20 @@
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav ms-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#hero">Home</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Link</a>
+		        <a class="nav-link" href="#about">About</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#why-us">Why Us</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#service">Services</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#team">Team</a>
 		      </li>
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -45,7 +54,9 @@
 		  </div>
 	  </div>
 	</nav>
-	<section class="banner">
+
+	
+	<section id="hero" class="banner">
 		<div class="container">
 			<div class="row banner-content">
 				<div class="col-lg-7">
@@ -68,10 +79,9 @@
 				</div>
 			</div>
 		</div>
-		
 	</section>
 
-	<section class="about">
+	<section id="about" class="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
@@ -91,7 +101,7 @@
 		</div>
 	</section>
 
-	<section class="why-us">
+	<section id="why-us" class="why-us">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
@@ -103,7 +113,7 @@
 					<h2 class="why-us-title" data-aos="fade-up">
 						Why Choose Us 
 					</h2>
-					<ul data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+					<ul data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
 						<li><i class="fa fa-check" aria-hidden="true"></i> Industry Experts</li>
 						<li><i class="fa fa-check" aria-hidden="true"></i> Personalized Support</li>
 						<li><i class="fa fa-check" aria-hidden="true"></i> Data-driven Strategy</li>
@@ -116,7 +126,7 @@
 		</div>
 	</section>
 
-	<section class="service">
+	<section id="service" class="service">
 		<div class="container custom-bg">
 			<div class="row p-5">
 				<div class="col-lg-7">
@@ -267,6 +277,127 @@
 						    	<a href="" class="btnBx">Learn more<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 						    </div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="team" class="team p-5">
+		<div class="container">
+			<div class="row py-5">
+				<div class="col-lg-7">
+					<h2 class="team-title" data-aos="fade-up">
+						Our team that will help your business grow
+					</h2>
+					<p class="team-text" data-aos="fade-up" data-aos-duration="1000">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="teamBx" data-aos="fade-up" data-aos-duration="1000">
+						<img src="assets/img/akib.jpg" class="img-fluid team-img">
+						<div class="team-contentBx">
+							<h3 class="name">Faisal R. Akib</h3>
+							<h3 class="title">Head of<br>Tech</h3>
+							<p class="desc">There are many variations of passages of Lorem Ipsum available</p>
+							<div class="team-social">
+								<a href="https://github.com/Rayyane" class="social-link"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+								<a href="https://github.com/Rayyane" class="social-link"><i class="fa fa-github" aria-hidden="true"></i></a>
+								<a href="https://www.linkedin.com/in/rayyane-akib-4558a890/" class="social-link"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="teamBx" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+						<img src="assets/img/nawshad.jpg" class="img-fluid team-img">
+						<div class="team-contentBx">
+							<h3 class="name">Nawshad K. Ananda</h3>
+							<h3 class="title">Head of<br>Business</h3>
+							<p class="desc">There are many variations of passages of Lorem Ipsum available</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="teamBx" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+						<img src="assets/img/sakib.jpg" class="img-fluid team-img">
+						<div class="team-contentBx">
+							<h3 class="name">Sakib I. Mahiuddin</h3>
+							<h3 class="title">Head of<br>Operations</h3>
+							<p class="desc">There are many variations of passages of Lorem Ipsum available</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="teamBx">
+						<img src="assets/img/banner_img.png" class="img-fluid team-img">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="call-to-action" class="call-to-action">
+		<div class="actionBx">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="call-left">
+							<h2 class="call-title">Got a question?</h2>
+							<p class="call-text">Get answers to your questions and solutions to your problems. tealQ Support is always happy to help.</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="call-right">
+							<!-- <h2 class="call-title">Send us a message, or give us a call</h2> -->
+							<p class="call-right-text">Email us at:</p>
+							<p class="call-right-text">hello@tealqdigital.com</p>
+							<p class="call-right-text">Call us at:</p>
+							<p class="call-right-text">+88 0152 145 4721</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="container">
+						<h2 class="footer-title">tealQ Digital</h2>
+						<p class="footer-text">
+							We are tealQ, a business-to-business (B2B) digital marketing company that offers web design, search engine optimization (SEO), content creation (content writing), and affiliate marketing promotion services.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 footer-links">
+					<div class="container">
+						<h2 class="list-title">Links</h2>
+						<ul>
+							<li>Home</li>
+							<li>About</li>
+							<li>Why Us</li>
+							<li>Service</li>
+							<li>Team</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="container">
+						<h2 class="sub-title">Subscribe</h2>
+						<p class="sub-text">Subscibe to our newsletter to get the latest updates from us</p>
+						<form class="form-group">
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							<div class="footer-button">
+								<a class="btn btn-primary my-btn" href="#" role="button">Submit</a>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
