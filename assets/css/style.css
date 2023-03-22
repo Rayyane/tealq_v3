@@ -2,10 +2,13 @@
 	font-family: 'Outfit', sans-serif;
 	color: #F8FAFB;
 	--black-text: #1F2225;
-	--dark-bg: #2f4f4f;
+	--dark-bg: #1d3030;
 	--light-bg: #F8FAFB;
 	--light-color: #e2fffe;
 	--teal-bg: #008080;
+}
+body {
+	overflow-x: hidden;
 }
 .navbar {
 	transition: 0.5s;
@@ -30,7 +33,7 @@
 
 .banner {
 	height: 100vh;
-	background-color: var(--dark-bg);
+	background-color: white;
 }
 
 
@@ -40,26 +43,39 @@
 	}
 }
 
-
+.banner .half-circle {
+	position: absolute;
+	top: -10px;
+	width: 700px;
+	height: 700px;
+	right: -300px;
+	/*overflow: hidden;*/
+	background-color: var(--teal-bg);
+	border-radius: 50%;
+}
 .banner .banner-text h1 {
 	font-size: 4rem;
+	color: var(--dark-bg);
 }
 .banner .banner-text h3 {
 	font-size: 2.1rem;
+	color: var(--dark-bg);
 }
 .banner .banner-button {
 	padding-top: 20px;
 }
 .banner .my-btn {
 	background-color: transparent;
-	border-color: #008080;
+	border: 2px solid #008080;
+	color: var(--black-text);
 }
 .banner .my-link {
 	background-color: transparent;
 	border-color: transparent;
+	color: var(--black-text);
 }
 .about{
-	background-image: linear-gradient(#e2fffe, #e6fffe);
+	background-image: linear-gradient(#ffffff, #e6fffe);
 	/*background-image: linear-gradient(red, yellow);*/
 	padding-top: 5rem;
 	padding-bottom: 5rem;
@@ -122,6 +138,48 @@
 .service .service-text {
 	font-size: 1.5rem;
 	color: var(--black-text);
+}
+.service .service-desc {
+	background-color: white;
+	margin-right: 2rem;
+	margin-left: 2rem;
+	border-radius: 20px;
+}
+.service .service-desc-title {
+	color: var(--black-text);
+	font-size: 2rem;
+}
+.service .service-desc-text {
+	font-size: 1.2rem;
+	color: var(--black-text);
+}
+.service .service-desc-list {
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+	font-size: 1.1rem;
+	line-height: 2rem;
+}
+.service .service-desc-list i {
+	color: var(--teal-bg);
+}
+.service .service-desc-list li {
+	color: var(--black-text);
+}
+.service .service-desc-btn {
+	text-decoration: none;
+	color: var(--dark-bg);
+	font-size: 1.2rem;
+}
+.service .service-desc-btn i {
+	color: black;
+	font-weight: lighter;
+	padding-left: 0.3rem;
+	transition: 0.5s;
+}
+.service .service-desc-btn:hover i {
+	color: var(--dark-bg);
+	padding-left: 0.5rem;
 }
 .service .card {
 	border-radius: 20px;
