@@ -2,8 +2,10 @@
 	font-family: 'Outfit', sans-serif;
 	color: #F8FAFB;
 	--black-text: #1F2225;
-	--dark-bg: #101e27;
+	--dark-bg: #2f4f4f;
 	--light-bg: #F8FAFB;
+	--light-color: #e2fffe;
+	--teal-bg: #008080;
 }
 .navbar {
 	transition: 0.5s;
@@ -28,7 +30,7 @@
 
 .banner {
 	height: 100vh;
-	background-color: #101e27;
+	background-color: var(--dark-bg);
 }
 
 
@@ -57,7 +59,8 @@
 	border-color: transparent;
 }
 .about{
-	background-color: #F8FAFB;
+	background-image: linear-gradient(#e2fffe, #e6fffe);
+	/*background-image: linear-gradient(red, yellow);*/
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 }
@@ -73,7 +76,7 @@
 }
 
 .why-us{
-	background-color: #F8FAFB;
+	background-image: linear-gradient(#e6fffe, #ffffff);
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 }
@@ -107,7 +110,7 @@
 	padding-bottom: 5rem;
 }
 .service .custom-bg {
-	background-color: #F8FAFB;
+	background-color: var(--light-color);
 	padding: 1rem;
 	border: solid 1px transparent;
 	border-radius: 20px;
@@ -122,6 +125,7 @@
 }
 .service .card {
 	border-radius: 20px;
+	background-color: var(--teal-bg);
 }
 .service .iconBx {
 	width: 90%;
@@ -130,7 +134,7 @@
 
 .service .iconBx i {
 	font-size: 5rem;
-	color: #008080;
+	/*color: #008080;*/
 	padding-top: 1rem;
 }
 .service .card-body {
@@ -141,13 +145,17 @@
 	padding-bottom: 1rem;
 	border-bottom: 1px solid #cdcdcd;
 }
+.service .titleBx .icon-title i {
+	font-size: 3rem;
+	bottom: 0;
+}
 .service .titleBx .card-title {
 	font-size: 1.5rem;
 	padding-left: 0;
-	color: var(--black-text);
+	/*color: var(--black-text);*/
 }
 .service .titleBx .card-text {
-	color: var(--black-text);
+	/*color: var(--black-text);*/
 }
 .service .listBx {
 	padding-top: 1rem;
@@ -158,25 +166,25 @@
 }
 .service .listBx li {
 	list-style: none;
-	color: var(--black-text);
+	/*color: var(--black-text);*/
 }
 .service .listBx .btnBx i {
-	color: var(--black-text);
+	/*color: var(--black-text);*/
 	font-weight: lighter;
 	padding-left: 0.3rem;
 	transition: 0.5s;
 }
 .service .listBx .btnBx:hover i {
-	color: #008080;
+	color: var(--dark-bg);
 	padding-left: 0.5rem;
 }
 .service .listBx li i {
-	color: #008080;
+	/*color: #008080;*/
 	padding-right: 0.5rem;
 }
 .service .listBx a{
 	text-decoration: none;
-	color: var(--black-text);
+	color: var(--light-text);
 	font-size: 1.2rem;
 	padding-left: 1.5rem;
 }
@@ -222,7 +230,8 @@
 }
 
 .team .teamBx .team-contentBx .title {
-	font-size: 2.5rem;
+	font-size: 1rem;
+	word-spacing: 0.2rem;
 }
 
 .team .teamBx .team-contentBx .desc,
@@ -268,6 +277,16 @@
 	border-radius: 20px;
 	padding: 5%;
 }
+.call-to-action .action-text {
+	display: inline-flex;
+}
+.call-to-action .action-text .small-text {
+	font-size: 30px;
+}
+.call-to-action .action-text .large-text {
+	font-size: 100px;
+	line-height: 2rem;
+}
 .call-to-action .call-title {
 	font-size: 2.5rem;
 	margin-bottom: 20px;
@@ -278,23 +297,26 @@
 .call-to-action .call-right-text {
 	font-size: 1.2rem;
 }
-.call-to-action .call-right {
-	position: absolute;
-	margin-left: 30px;
-	top: 50%;
-	transform: translateY(-50%);
+.call-to-action .my-btn {
+	background-color: transparent;
+	border-color: white;
 }
-/*.call-to-action h2, p {
-	color: var(--black-text);
-}*/
+.call-to-action i {
+	margin: 10px;
+	transition: all 0.2s ease;
+}
+.call-to-action .my-btn:hover i{
+	transform: scale(1.1);
+}
+
 .footer {
 	position: relative;
 	background-color: var(--dark-bg);
 }
 @media screen and (min-width: 1299px) {
 	.footer {
-		padding-top: 180px;
-		margin-top: -130px;
+		padding-top: 230px;
+		margin-top: -170px;
 	}
 } 
 .footer .footer-title {
@@ -303,6 +325,28 @@
 .footer .footer-text {
 	font-size: 1rem;
 	line-height: 1.7rem;
+}
+.footer .footer-social {
+	display: flex;
+}
+.footer .footer-social a {
+	transition: all 1s ease;
+}
+.footer .footer-social .footer-icon {
+	background-color: #008080;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #008080;
+	border-radius: 20%;
+	text-align: center;
+	margin: 0 15px;
+}
+.footer .footer-social .footer-icon:hover {
+	background-color: transparent;
+}
+.footer .footer-social .footer-icon .fa {
+	margin-top: 50%;
+	transform: translateY(-50%);
 }
 /*.footer > .footer h2, .footer p,  .footer li, .footer h2 {
 	color: var(--dark-bg);
