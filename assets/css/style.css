@@ -33,25 +33,82 @@ body {
 
 .banner {
 	height: 100vh;
-	background-color: white;
+	background-color: #fbf8ff;
 }
 
 
 @media (min-width: 1299px) {
 	.banner .banner-content {
-		padding-top: 20%;
+		padding-top: 15%;
+	}
+	.banner .banner-text {
+		padding-top: 10%;
 	}
 }
 
-.banner .half-circle {
+.banner .half-circle-1 {
 	position: absolute;
-	top: -10px;
-	width: 700px;
-	height: 700px;
-	right: -300px;
-	/*overflow: hidden;*/
-	background-color: var(--teal-bg);
+	/*bottom: -50px;*/
+	/*left: 50%;*/
+	transform: translateX(-50%);
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	background-color: transparent;
 	border-radius: 50%;
+	border: 2px solid var(--teal-bg);
+	opacity: 0.2;
+	animation: movebounce 20s infinite;
+	/*z-index: -1;*/
+}
+@keyframes movebounce {
+	0% {
+		left: 50%;
+		bottom: -10%;
+		opacity: 0.2;
+	}
+	50% {
+		left: 40%;
+		bottom: 20%;
+		opacity: 0;
+	}
+	100% {
+		left: 50%;
+		bottom: -10%;
+		opacity: 0.2;
+	}
+}
+.banner .square-1 {
+	position: absolute;
+	top: 15%;
+	width: 300px;
+	height: 82%;
+	right: 40px;
+	overflow: hidden;
+	background-color: var(--teal-bg);
+	opacity: 0.9;
+}
+.banner .square-2 {
+	position: absolute;
+	top: 32%;
+	width: 400px;
+	height: 52%;
+	right: 80px;
+	overflow: hidden;
+	background-color: var(--teal-bg);
+	opacity: 0.9;
+}
+.banner .half-circle-2 {
+	position: absolute;
+	top: -40px;
+	width: 270px;
+	height: 270px;
+	left: -40px;
+	/*overflow: hidden;*/
+	background-color: transparent;
+	border: 2px solid var(--teal-bg);
+	border-radius: 50%;
+	opacity: 0.1;
 }
 .banner .banner-text h1 {
 	font-size: 4rem;
@@ -75,7 +132,8 @@ body {
 	color: var(--black-text);
 }
 .about{
-	background-image: linear-gradient(#ffffff, #e6fffe);
+	position: relative;
+	background-image: linear-gradient(#fbf8ff, #e6fffe);
 	/*background-image: linear-gradient(red, yellow);*/
 	padding-top: 5rem;
 	padding-bottom: 5rem;
@@ -144,16 +202,35 @@ body {
 	margin-right: 2rem;
 	margin-left: 2rem;
 	border-radius: 20px;
+	margin-bottom: 50px;
 }
 .service .service-desc-title {
 	color: var(--black-text);
 	font-size: 2rem;
 }
+.service .service-desc-title-right {
+	color: var(--black-text);
+	font-size: 2rem;
+	margin-left: 50px;
+}
 .service .service-desc-text {
 	font-size: 1.2rem;
 	color: var(--black-text);
+	max-width: 90%;
+}
+.service .service-desc-text-right {
+	font-size: 1.2rem;
+	color: var(--black-text);
+	margin-left: 50px;
 }
 .service .service-desc-list {
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+	font-size: 1.1rem;
+	line-height: 2rem;
+}
+.service .service-desc-list-right {
 	list-style: none;
 	padding-left: 0;
 	margin-left: 0;
@@ -163,13 +240,26 @@ body {
 .service .service-desc-list i {
 	color: var(--teal-bg);
 }
+.service .service-desc-list-right i {
+	color: var(--teal-bg);
+}
 .service .service-desc-list li {
 	color: var(--black-text);
+}
+.service .service-desc-list-right li {
+	color: var(--black-text);
+	margin-left: 50px;
 }
 .service .service-desc-btn {
 	text-decoration: none;
 	color: var(--dark-bg);
 	font-size: 1.2rem;
+}
+.service .service-desc-btn-right {
+	text-decoration: none;
+	color: var(--dark-bg);
+	font-size: 1.2rem;
+	margin-left: 50px;
 }
 .service .service-desc-btn i {
 	color: black;
@@ -177,7 +267,17 @@ body {
 	padding-left: 0.3rem;
 	transition: 0.5s;
 }
+.service .service-desc-btn-right i {
+	color: black;
+	font-weight: lighter;
+	padding-left: 0.3rem;
+	transition: 0.5s;
+}
 .service .service-desc-btn:hover i {
+	color: var(--dark-bg);
+	padding-left: 0.5rem;
+}
+.service .service-desc-btn-right:hover i {
 	color: var(--dark-bg);
 	padding-left: 0.5rem;
 }
@@ -334,6 +434,28 @@ body {
 	background-color: #008080;
 	border-radius: 20px;
 	padding: 5%;
+	overflow: hidden;
+}
+.call-to-action .action-fig-1 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	left: -70px;
+	bottom: -70px;
+	border-radius: 50%;
+	background-color: var(--dark-bg);
+	opacity: 0.1;
+}
+.call-to-action .action-fig-2 {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	right: -100px;
+	top: -100px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 2px solid white;
+	opacity: 0.1;
 }
 .call-to-action .action-text {
 	display: inline-flex;
@@ -357,7 +479,7 @@ body {
 }
 .call-to-action .my-btn {
 	background-color: transparent;
-	border-color: white;
+	border: 2px solid white;
 }
 .call-to-action i {
 	margin: 10px;
