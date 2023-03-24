@@ -39,10 +39,10 @@ body {
 
 @media (min-width: 1299px) {
 	.banner .banner-content {
-		padding-top: 15%;
+		padding-top: 20%;
 	}
 	.banner .banner-text {
-		padding-top: 10%;
+		padding-top: 0;
 	}
 }
 
@@ -90,9 +90,9 @@ body {
 }
 .banner .square-2 {
 	position: absolute;
-	top: 32%;
+	top: 40%;
 	width: 400px;
-	height: 52%;
+	height: 39%;
 	right: 80px;
 	overflow: hidden;
 	background-color: var(--teal-bg);
