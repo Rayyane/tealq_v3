@@ -17,6 +17,9 @@ body {
 .bg-light {
 	background-color: transparent !important;
 }
+.navbar-brand img{
+	max-height: 50px;
+}
 .navbar-scrolled {
 	background-color: #fff !important;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
@@ -203,6 +206,11 @@ body {
 	margin-left: 2rem;
 	border-radius: 20px;
 	margin-bottom: 50px;
+}
+.service .service-img {
+	position: relative;
+	top: 55%;
+	transform: translateY(-50%);
 }
 .service .service-desc-title {
 	color: var(--black-text);
@@ -499,8 +507,12 @@ body {
 		margin-top: -170px;
 	}
 } 
-.footer .footer-title {
+/*.footer .footer-title {
 	font-size: 2.5rem;
+}*/
+.footer .footer-title img {
+	max-height: 50px;
+	margin-left: -10px;
 }
 .footer .footer-text {
 	font-size: 1rem;
