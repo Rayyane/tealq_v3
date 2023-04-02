@@ -15,3 +15,4 @@ window.addEventListener('scroll', function() {
 		navEl.classList.remove('navbar-scrolled');
 	}
 });
+

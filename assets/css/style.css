@@ -117,6 +117,9 @@ body {
 	font-size: 4rem;
 	color: var(--dark-bg);
 }
+.banner .banner-text h1 span {
+	color: var(--teal-bg);
+}
 .banner .banner-text h3 {
 	font-size: 2.1rem;
 	color: var(--dark-bg);
@@ -133,6 +136,37 @@ body {
 	background-color: transparent;
 	border-color: transparent;
 	color: var(--black-text);
+}
+@media (min-width: 1299px) {
+	.banner .img-social, .banner .img-photo {
+		margin-top: -60px;
+	}
+}
+
+.banner .we-do {
+	color: var(--dark-bg);
+}
+.typed-cursor {
+    opacity: 1;
+    color: black;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 .about{
 	position: relative;
@@ -151,12 +185,41 @@ body {
 .about .about-text {
 	font-size: 1.1rem;
 }
+.about ul {
+	padding-left: 0;
+	/*padding-top: 1rem;*/
+}
+.about li {
+	color: var(--black-text);
+	font-size: 1.1rem;
+	list-style: none;
+	padding: .3rem;
+}
+.about li i {
+	color: #008080;
+	padding-right: 0.5rem;
+}
 
 .why-us{
 	background-image: linear-gradient(#e6fffe, #ffffff);
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 }
+@media screen and (min-width: 1199px) {
+	.why-us .why-us-img {
+		position: relative;
+		top: 40%;
+		transform: translateY(-50%);
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.why-us .why-us-img {
+		position: relative;
+		left: 65%;
+		transform: translateX(-50%);
+	}
+}
+
 .why-us .why-us-title, .why-us .why-us-text {
 	color: var(--black-text);
 	padding-left: 5rem;
@@ -166,6 +229,9 @@ body {
 }
 .why-us .why-us-text {
 	font-size: 1.1rem;
+}
+.why-us .why-us-card-text {
+	color: var(--dark-bg);
 }
 .why-us ul {
 	padding-left: 5rem;
@@ -219,17 +285,17 @@ body {
 .service .service-desc-title-right {
 	color: var(--black-text);
 	font-size: 2rem;
-	margin-left: 50px;
+	/*margin-left: 50px;*/
 }
 .service .service-desc-text {
 	font-size: 1.2rem;
 	color: var(--black-text);
-	max-width: 90%;
+	/*max-width: 90%;*/
 }
 .service .service-desc-text-right {
 	font-size: 1.2rem;
 	color: var(--black-text);
-	margin-left: 50px;
+	/*margin-left: 50px;*/
 }
 .service .service-desc-list {
 	list-style: none;
@@ -256,7 +322,7 @@ body {
 }
 .service .service-desc-list-right li {
 	color: var(--black-text);
-	margin-left: 50px;
+	/*margin-left: 50px;*/
 }
 .service .service-desc-btn {
 	text-decoration: none;
@@ -267,7 +333,7 @@ body {
 	text-decoration: none;
 	color: var(--dark-bg);
 	font-size: 1.2rem;
-	margin-left: 50px;
+	/*margin-left: 50px;*/
 }
 .service .service-desc-btn i {
 	color: black;
@@ -396,6 +462,10 @@ body {
 }
 
 .team .teamBx .team-contentBx .title {
+	font-size: 1.1rem;
+	word-spacing: 0.3rem;
+}
+.team .teamBx .team-contentBx .title-2 {
 	font-size: 1rem;
 	word-spacing: 0.2rem;
 }
