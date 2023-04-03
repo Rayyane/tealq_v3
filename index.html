@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>tealQ digital</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,26 +59,27 @@
 	
 	<section id="hero" class="banner">
 		<div class="container">
+			<div class="half-circle-1"></div>
+			<div class="half-circle-2"></div>
+			<div class="square-1"></div>
+			<div class="square-2"></div>
+
 			<div class="row banner-content">
-				<div class="half-circle-1"></div>
-				<div class="half-circle-2"></div>
-				<div class="square-1"></div>
-				<div class="square-2"></div>
-				<div class="col-lg-7">
+				<div class="col-lg-6">
 					<div class="banner-text" data-aos="fade-right" data-aos-duration="1000">
-						<h1>Stand Out In Your<br>Digital Crowd</h1>
-						<h3>Elevate Your Digital Brand</h3>
+						<h1 class="banner-title-1">Stand Out In Your<br>Digital Crowd</h1>
+						<h3 class="banner-title-2">Elevate Your Digital Brand</h3>
 						<div class="banner-button">
 							<a class="btn btn-primary my-btn" href="#" role="button">Know More</a>
-							<a href="" class="btn btn-primary my-link">Get in touch<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#1d3030" class="bi bi-caret-right" viewBox="0 0 16 16">
+							<a href="#contact-form" class="btn btn-primary my-link" role="button" data-toggle="modal">Get in touch<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#1d3030" class="bi bi-caret-right" viewBox="0 0 16 16">
 							  <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
 							</svg></a>
 							
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-5" data-aos="fade-left" data-aos-duration="1000">
-					<div class="banner-img">
+				<div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+					<div class="banner-img homepage-img">
 						<img src="assets/img/1435dfe8bcae02126340e1e0cf8ff900.gif" class="img-fluid" alt="Banner Image">
 						<!-- <video class="img-fluid" autoplay muted loop>
 							<source src="assets/img/banner_vid.mp4" type="video/mp4" />
@@ -88,10 +90,10 @@
 		</div>
 	</section>
 
-	<section id="about" class="about">
+	<section id="about" class="about p-2 p-md-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 about-content">
 					<h2 class="about-title pt-4" data-aos="fade-up">
 						Your Reliable Guide in<br>Online World 
 					</h2>
@@ -108,7 +110,7 @@
 		</div>
 	</section>
 
-	<section id="why-us" class="why-us">
+	<section id="why-us" class="why-us py-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
@@ -127,7 +129,7 @@
 							    src="https://cdn.lordicon.com/hbigeisx.json"
 							    trigger="morph"
 							    colors="primary:#008080"
-							    style="width:80px;height:80px">
+							    style="width:80px;height:80px;stroke-width:1px;">
 							</lord-icon>
 							<p class="why-us-card-text">Industry Experts</p>
 						</div>
@@ -197,7 +199,7 @@
 
 	<section id="service" class="service">
 		<div class="container custom-bg">
-			<div class="row p-5">
+			<div class="row p-3 p-md-5">
 				<div class="col-lg-7">
 					<h2 class="service-title" data-aos="fade-up">
 						Our products that will help your business grow 
@@ -208,8 +210,8 @@
 				</div>
 			</div>
 
-			<div class="row p-5 service-desc" data-aos="fade-up" data-aos-duration="1000">
-				<div class="col-lg-6">
+			<div class="row p-3 p-md-5 service-desc" data-aos="fade-up" data-aos-duration="1000">
+				<div class="col-lg-6 order-last order-lg-first">
 					<h5 class="service-desc-title py-2">Web Design<br>& Development</h5>
 					<p class="service-desc-text">Enhance your business with a modern eye catchy legitimate website that your clients and customers will love</p>
 			    	<ul class="service-desc-list">
@@ -220,16 +222,16 @@
 			    	</ul>
 			    	<a href="webdev.html" class="service-desc-btn">Learn more<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 				</div>
-				<div class="col-lg-6">
-					<img src="assets/img/web.png" class="img-fluid service-img">
+				<div class="col-lg-6 order-lg-last">
+					<img src="assets/img/web.png" class="img-fluid service-img order-first order-md-last">
 				</div>
 			</div>
 
-			<div class="row p-5 service-desc" data-aos="fade-up" data-aos-duration="1000">
-				<div class="col-lg-6 col-md-12 order-lg-1 order-sm-2">
+			<div class="row p-3 p-md-5 service-desc" data-aos="fade-up" data-aos-duration="1000">
+				<div class="col-lg-6">
 					<img src="assets/img/seo.png" class="img-fluid service-img">
 				</div>
-				<div class="col-lg-6 col-md-12 order-lg-2 order-sm-1">
+				<div class="col-lg-6">
 					<h5 class="service-desc-title-right py-2">Advanced SEO & SEM</h5>
 					<p class="service-desc-text-right"> Our SEO services can help you achieve higher search engine rankings for keywords that matter most to your business. We take a comprehensive approach to SEO, focusing on all aspects that impact SERPs.</p>
 			    	<ul class="service-desc-list-right">
@@ -243,8 +245,8 @@
 				</div>
 			</div>
 
-			<div class="row p-5 service-desc" data-aos="fade-up" data-aos-duration="1000">
-				<div class="col-lg-6">
+			<div class="row p-3 p-md-5 service-desc" data-aos="fade-up" data-aos-duration="1000">
+				<div class="col-lg-6 order-last order-lg-first">
 					<h5 class="service-desc-title py-2">Social Media Marketing<br>& Omnichannel Content Creation</h5>
 					<p class="service-desc-text">If you are planning for brand awareness for your business, our team is here to help you out. We can start assisting you with your social media content planning, holistic brand strategy and media buying. You're well aware that quality content is the key that unlocks the future.</p>
 			    	<ul class="service-desc-list">
@@ -257,15 +259,15 @@
 			    	<a href="social.html" class="service-desc-btn">Learn more<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 				</div>
 				<div class="col-lg-6">
-					<img src="assets/img/social.png" class="img-fluid service-img">
+					<img src="assets/img/social.png" class="img-fluid service-img order-first order-lg-last">
 				</div>
 			</div>
 
-			<div class="row p-5 service-desc" data-aos="fade-up" data-aos-duration="1000">
-				<div class="col-lg-6 col-md-12 order-lg-1 order-sm-2">
+			<div class="row p-3 p-md-5 service-desc" data-aos="fade-up" data-aos-duration="1000">
+				<div class="col-lg-6">
 					<img src="assets/img/photography.png" class="img-fluid service-img">
 				</div>
-				<div class="col-lg-6 col-md-12 order-lg-2 order-sm-1">
+				<div class="col-lg-6">
 					<h5 class="service-desc-title-right pt-4"> Photography <br>& Videography</h5>
 					<p class="service-desc-text-right pt-2">Make stunning visuals to your product photos with the help of our professional photography team to set yourself apart from the competition.</p>
 			    	<ul class="service-desc-list-right">
@@ -279,8 +281,8 @@
 				</div>
 			</div>
 
-			<div class="row p-5 service-desc" data-aos="fade-up" data-aos-duration="1000">
-				<div class="col-lg-6">
+			<div class="row p-3 p-md-5 service-desc" data-aos="fade-up" data-aos-duration="1000">
+				<div class="col-lg-6 order-last order-lg-first">
 					<h5 class="service-desc-title py-2">Studio for Design<br>& Communication</h5>
 					<p class="service-desc-text">Our design & communication team will provide you the deliverables match the strategy and communication of your brand.</p>
 			    	<ul class="service-desc-list">
@@ -294,7 +296,7 @@
 			    	<a href="studio.html" class="service-desc-btn">Learn more<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 				</div>
 				<div class="col-lg-6">
-					<img src="assets/img/studio.png" class="img-fluid service-img">
+					<img src="assets/img/studio.png" class="img-fluid service-img order-first order-lg-last">
 				</div>
 			</div>
 
@@ -448,7 +450,7 @@
 		</div>
 	</section>
 	
-	<section id="team" class="team p-5">
+	<section id="team" class="team p-3 p-md-5">
 		<div class="container">
 			<div class="row py-5">
 				<div class="col-lg-7">
@@ -460,12 +462,12 @@
 					</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4">
+			<div class="row text-center">
+				<div class="col-lg-4">
 					<div class="teamBx" data-aos="fade-up" data-aos-duration="1000">
 						<img src="assets/img/akib.jpg" class="img-fluid team-img">
 						<div class="team-contentBx text-center">
-							<h3 class="name">Faisal R. Akib</h3>
+							<h3 class="name">Faisal Raihan Akib</h3>
 							<h3 class="title">Head of Technology</h3>
 							<h3 class="title-2">Founding Partner</h3>
 							<!-- <p class="desc">There are many variations of passages of Lorem Ipsum available</p> -->
@@ -477,22 +479,22 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<div class="teamBx" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
 						<img src="assets/img/nawshad.jpg" class="img-fluid team-img">
 						<div class="team-contentBx text-center">
-							<h3 class="name">Nawshad K. Ananda</h3>
+							<h3 class="name">Nawshad Kabir Ananda</h3>
 							<h3 class="title">Head of Marketing</h3>
 							<h3 class="title-2">Founding Partner</h3>
 							<!-- <p class="desc">There are many variations of passages of Lorem Ipsum available</p> -->
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<div class="teamBx" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
 						<img src="assets/img/sakib.jpg" class="img-fluid team-img">
 						<div class="team-contentBx text-center">
-							<h3 class="name">Sakib I. Mahiuddin</h3>
+							<h3 class="name">Sakib Ibena Mahiuddin</h3>
 							<h3 class="title">Head of Operations</h3>
 							<h3 class="title-2">Founding Partner</h3>
 							<!-- <p class="desc">There are many variations of passages of Lorem Ipsum available</p> -->
@@ -504,7 +506,7 @@
 	</section>
 
 	<section id="call-to-action" class="call-to-action">
-		<div class="actionBx">
+		<div class="container actionBx">
 			<div class="action-fig-1"></div>
 			<div class="action-fig-2"></div>
 			<div class="container">
@@ -547,48 +549,49 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5">
-					<div class="container">
-						<h2 class="footer-title"><img src="assets/img/tealq_white.png"></h2>
-						<p class="footer-text">
-							We are tealQ, a business-to-business (B2B) digital marketing company that offers web design, search engine optimization (SEO), content creation (content writing), and affiliate marketing promotion services.
-						</p>
-						<ul class="footer-social">
-							<a href=""><li class="footer-icon"><i class="fa fa-facebook-square"></i></li></a>
-							<a href=""><li class="footer-icon"><i class="fa fa-instagram"></i></li></a>
-							<a href=""><li class="footer-icon"><i class="fa fa-youtube-play"></i></li></a>
-							<a href=""><li class="footer-icon"><i class="fa fa-facebook-square"></i></li></a>
-						</ul>
-					</div>
+					
+					<h2 class="footer-title"><img src="assets/img/tealq_white.png"></h2>
+					<p class="footer-text">
+						We are tealQ, a business-to-business (B2B) digital marketing company that offers web design, search engine optimization (SEO), content creation (content writing), and affiliate marketing promotion services.
+					</p>
+					<ul class="footer-social">
+						<a href=""><li class="footer-icon"><i class="fa fa-facebook-square"></i></li></a>
+						<a href=""><li class="footer-icon"><i class="fa fa-instagram"></i></li></a>
+						<a href=""><li class="footer-icon"><i class="fa fa-youtube-play"></i></li></a>
+						<a href=""><li class="footer-icon"><i class="fa fa-facebook-square"></i></li></a>
+					</ul>
+					
 				</div>
 				<div class="col-lg-3 footer-links">
-					<div class="container">
-						<h2 class="list-title">Links</h2>
-						<ul>
-							<li>Home</li>
-							<li>About</li>
-							<li>Why Us</li>
-							<li>Service</li>
-							<li>Team</li>
-						</ul>
-					</div>
+					
+					<h2 class="list-title">Links</h2>
+					<ul>
+						<li>Home</li>
+						<li>About</li>
+						<li>Why Us</li>
+						<li>Service</li>
+						<li>Team</li>
+					</ul>
+					
 				</div>
 				<div class="col-lg-4">
-					<div class="container">
-						<h2 class="sub-title">Subscribe</h2>
-						<p class="sub-text">Subscibe to our newsletter to get the latest updates from us</p>
-						<form class="form-inline">
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-							<div class="footer-button">
-								<a class="btn btn-primary my-btn" href="#" role="button">Submit</a>
-							</div>
-							<!-- <div class="form-group mb-2">
-							    <label for="inputPassword2" class="sr-only">Password</label>
-							    <input type="email" class="form-control" id="inputemail" placeholder="Your Email">
-							</div>
-							<button type="submit" class="btn btn-primary mb-2">Submit</button>
-						</form> -->
-					</div>
+					
+					<h2 class="sub-title">Subscribe</h2>
+					<p class="sub-text">Subscibe to our newsletter to get the latest updates from us</p>
+					<form class="form-inline">
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						<div class="footer-button">
+							<a class="btn btn-primary my-btn" href="#" role="button">Submit</a>
+						</div>
+						<!-- <div class="form-group mb-2">
+						    <label for="inputPassword2" class="sr-only">Password</label>
+						    <input type="email" class="form-control" id="inputemail" placeholder="Your Email">
+						</div>
+						<button type="submit" class="btn btn-primary mb-2">Submit</button>
+					</form> -->
+					</form>
+					
 				</div>
 			</div>
 		</div>
@@ -601,13 +604,47 @@
 	                <button type="button" class="btn-close" data-dismiss="modal"></button>
 	            </div> -->
 	            <div class="modal-body">
-	                <p>Do you want to save changes to this document before closing?</p>
-	                <p class="text-secondary"><small>If you don't save, your changes will be lost.</small></p>
+	            	<button type="button" class="btn-close" data-dismiss="modal"></button>
+	                <div class="container p-5">
+	                	<h3>Lorem Ipsum Text</h3>
+		                <p class="text-secondary"><small>It is a long established fact </small></p>
+		                <form class="form-group">
+		                	<div class="row">
+		                		<div class="col-md-6 mb-3">
+		                			<label for="firstname" class="form-label">First name</label>
+		                			<input type="text" class="form-control" id="firstname" required="true">
+		                		</div>
+		                		<div class="col-md-6 mb-3">
+		                			<label for="lastname" class="form-label">Last name</label>
+		                			<input type="text" class="form-control" id="lastname">
+		                		</div>
+		                		<div class="col-md-6 mb-3">
+		                			<label for="email" class="form-label">Email</label>
+		                			<input type="email" class="form-control" id="email" required="true">
+		                		</div>
+		                		<div class="col-md-6 mb-3">
+		                			<label for="phone" class="form-label">Phone Number</label>
+		                			<input type="tel" class="form-control" id="phone" required="true">
+		                		</div>
+		                		<div class="col-md-12 mb-3">
+		                			<label for="message" class="form-label">Message</label>
+		                			<textarea class="form-control" id="message" rows="3" required="true"></textarea>
+		                		</div>
+		                	</div>
+		                	<div class="row modal-buttons">
+		                		<div class="col-auto my-3">
+		                			<button class="btn btn-primary my-btn" type="submit">Submit</button>
+								    <!-- <a class="btn btn-primary my-btn" href="" role="button" type="submit">Submit</a> -->
+								    <a role="button" class="btn btn-secondary mx-2" data-dismiss="modal">Cancel</a>
+								</div>
+		                	</div>
+		                </form>
+	                </div>
 	            </div>
-	            <div class="modal-footer">
+	            <!-- <div class="modal-footer">
 	                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
 	                <button type="button" class="btn btn-primary">Save changes</button>
-	            </div>
+	            </div> -->
 	        </div>
 	    </div>
 	</div>
