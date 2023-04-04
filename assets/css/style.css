@@ -12,6 +12,7 @@ body {
 }
 .navbar {
 	transition: 0.5s;
+	overflow: hidden;
 }
 
 .bg-light {
@@ -39,6 +40,7 @@ body {
 	position: relative;
 	height: 100vh;
 	background-color: #fbf8ff;
+	overflow: hidden;
 }
 
 
@@ -770,9 +772,9 @@ body {
 		padding-top: 185px;
 		margin-top: -150px;
 	}
-	.footer .container {
+	/*.footer .container {
 		max-width: 90%;
-	}
+	}*/
 }
 @media screen and (max-width: 575.98px) {
 	.footer {
